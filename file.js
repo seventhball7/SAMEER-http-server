@@ -19,7 +19,7 @@ const server = http.createServer((req, res) => {
     res.write("Welcome here");
     res.end();
   } else if (req.url == "/html") {
-    filePath = path.join(__dirname, "data.html");
+    filePath = path.join(__dirname, "/data/data.html");
     fs.readFile(filePath, "utf8", (err, data) => {
       if (err) {
         res.writehead(501, "Not implemented");
@@ -32,7 +32,7 @@ const server = http.createServer((req, res) => {
       }
     });
   } else if (req.url == "/json") {
-    filePath = path.join(__dirname, "data.json");
+    filePath = path.join(__dirname, "/data/data.json");
     fs.readFile(filePath, "utf-8", (err, data) => {
       if (err) {
         res.writehead(501, "Not implemented");
