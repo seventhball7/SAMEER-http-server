@@ -3,7 +3,7 @@ const code = require("http").STATUS_CODES;
 const fs = require("fs");
 const path = require("path");
 
-//console.log(code)
+
 
 const uuid = {
   uuid: "14d96bb1-5d53-472f-a96e-b3a1fa82addd",
